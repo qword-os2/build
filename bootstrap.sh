@@ -28,7 +28,7 @@ BUILD_DIR="$(realpath $1)"
 
 # qword repo
 QWORD_DIR="$(pwd)/qword"
-QWORD_REPO=https://github.com/qword-os/qword.git
+QWORD_REPO=https://github.com/qword-os2/qword.git
 
 # Add toolchain to PATH
 PATH="$BUILD_DIR/tools/cross-binutils/bin:$PATH"
