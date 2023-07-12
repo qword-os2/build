@@ -11,17 +11,19 @@ You're free to check out the code, fork it, and all that, as long as the license
 (LICENSE.md) is respected.
 
 ## Build requirements
+**A devcontainer which has all requirements installed! Please skip to [Building](#building) if you have loaded the container.**
+
 In order to build qword, make sure to have the following installed:
  `wget`, `git`, `bash`, `make` (`gmake` on FreeBSD), `patch`,
  `meson` (from pip3), `ninja-build`, `xz`, `gzip`, `tar`,
- `gcc/g++` (8 or higher), `nasm`, `autoconf`, `bison`,
- `gperf`, `autopoint`, `help2man`,
- `fuse-devel` (on Linux), `rsync` (on Linux),
- `parted` (on Linux), and `qemu` (to test it).
+ `texinfo` , `gcc/g++` (8 or higher), `nasm`, `autoconf`,
+ `bison`, `gperf`, `autopoint`, `help2man`,
+ `libfuse-dev` (on Linux), `rsync` (on Linux),
+ `parted` (on Linux), and `qemu-system-x86` (to test it).
 
 The echfs utilities are necessary to build the image. Install them:
 ```bash
-git clone https://github.com/qword-os/echfs.git
+git clone https://github.com/echfs/echfs.git
 cd echfs
 make
 # This will install echfs-utils in /usr/local
@@ -47,12 +49,8 @@ xbstrap install --all
 cd ..
 # Create the image using the bootstrap.sh script
 MAKEFLAGS="-j4" ./bootstrap.sh build
-# If your platform doesnt support fuse, you can use.
-# MAKEFLAGS="-j4" USE_FUSE=no ./bootstrap.sh ../build
-# And now if you wanna test it in qemu simply run
-./run.sh
-# If that doesn't work because you don't have hardware virtualisation/KVM, run
-NO_KVM=1 ./run.sh
+# If your platform doesnt support fuse (e.g. devcontainer), you can use.
+MAKEFLAGS="-j4" USE_FUSE=no ./bootstrap.sh build
 ```
 
 Some MAKEFLAGS that can be useful are:
@@ -63,3 +61,14 @@ DBGOUT=tty    # For kernel tty debug output
 DBGOUT=both   # For both of the above
 DBGSYM=yes    # For compilation with debug symbols and other debug facilities (can be used in combination with the other options)
 ```
+
+## Running
+Once built you can run the system in qemu.
+```bash
+# Now if you want to test it in qemu simply run
+./run.sh
+# If that doesn't work because you don't have hardware virtualisation/KVM or using the devcontainer, run
+NO_KVM=1 ./run.sh
+```
+
+The default username / password are `root` and `root`.

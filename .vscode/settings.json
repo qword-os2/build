@@ -1,0 +1,13 @@
+{
+    "files.associations": {
+        "*.inc": "nasm",
+        "task.h": "c",
+        "klib.h": "c",
+        "devfs.h": "c",
+        "mount.h": "c",
+        "unistd.h": "c",
+        "messages.h": "c",
+        "tty.h": "c",
+        "stddef.h": "c"
+    }
+}
