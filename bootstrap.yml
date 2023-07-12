@@ -396,7 +396,7 @@ packages:
   - name: util-qword
     source:
       subdir: 'ports'
-      git: 'https://github.com/qword-os/util-qword.git'
+      git: 'https://github.com/qword-os2/util-qword.git'
       branch: 'master'
     tools_required:
       - system-gcc

@@ -13,7 +13,7 @@ You're free to check out the code, fork it, and all that, as long as the license
 ## Build requirements
 In order to build qword, make sure to have the following installed:
  `wget`, `git`, `bash`, `make` (`gmake` on FreeBSD), `patch`,
- `meson` (from pip3), `ninja`, `xz`, `gzip`, `tar`,
+ `meson` (from pip3), `ninja-build`, `xz`, `gzip`, `tar`,
  `gcc/g++` (8 or higher), `nasm`, `autoconf`, `bison`,
  `gperf`, `autopoint`, `help2man`,
  `fuse-devel` (on Linux), `rsync` (on Linux),
