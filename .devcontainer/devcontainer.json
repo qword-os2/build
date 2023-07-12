@@ -1,0 +1,4 @@
+{
+    "image":"mcr.microsoft.com/devcontainers/universal:2",
+    "postCreateCommand": "sudo apt get install -y wget git bash make patch ninja xz gzip tar nasm autoconf bison gperf autopoint help2man fuse-devel rsync parted qemu && pip install meson"
+}
