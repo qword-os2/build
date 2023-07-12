@@ -2,16 +2,13 @@
 
 ![Reference screenshot](/screenshot.png?raw=true "Reference screenshot")
 
-# THIS PROJECT IS DEFUNCT.
-Sorry about that.
+## THIS PROJECT IS NOT DEFUNCT.
+I see Qword2 as the "unofficial" second version of https://github.com/qword-os/. All thanks goes to the original contributors.
 
-Please do not send PRs or open issues against this defunct project which will
-no longer be updated.
+Please do send PRs or open issues against this project which looked at.
 
 You're free to check out the code, fork it, and all that, as long as the license
 (LICENSE.md) is respected.
-
-# Moving on
 
 ## Build requirements
 In order to build qword, make sure to have the following installed:
