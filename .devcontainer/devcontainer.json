@@ -22,7 +22,8 @@
 			"extensions": [
 				"ms-vscode.cpptools-extension-pack",
 				"doinkythederp.nasm-language-support",
-				"usernamehw.errorlens"
+				"usernamehw.errorlens",
+				"mesonbuild.mesonbuild"
 			]
 		}
 	}

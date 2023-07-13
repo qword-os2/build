@@ -7,6 +7,7 @@
 /limine
 /echfs
 /build
+/.vscode/settings.json
 
 /root/*
 !/root/etc
