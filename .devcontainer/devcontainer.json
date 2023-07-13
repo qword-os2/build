@@ -14,10 +14,6 @@
 		"label": "desktop"
 	  }
 	},
-
-	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "./.devcontainer/postCreateCommand.sh",
-
 	// Configure tool-specific properties.
 	"customizations": {
 		// Configure properties specific to VS Code.
@@ -26,7 +22,8 @@
 			"extensions": [
 				"ms-vscode.cpptools-extension-pack",
 				"doinkythederp.nasm-language-support",
-				"usernamehw.errorlens"
+				"usernamehw.errorlens",
+				"mesonbuild.mesonbuild"
 			]
 		}
 	}
