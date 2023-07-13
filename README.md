@@ -38,7 +38,7 @@ sudo pip3 install xbstrap
 ## Building
 ```bash
 # Clone this repo wherever you like
-git clone https://github.com/qword-os/build.git qword-build
+git clone https://github.com/qword-os2/build.git qword-build
 cd qword-build
 # Create and enter a "build" directory inside
 mkdir build && cd build
